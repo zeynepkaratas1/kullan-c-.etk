@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 7px;     /*10px baslangıc degeri olacak.bunu referans alarak digerlerini rem cinsinden boyutlandıracagız
+     bu sayede aralarında bir oran olacak */
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h3{
+    color: rgb(197, 111, 6);
+}
+a{
+    text-decoration: none;   /*alt çizgi sil*/
+    color: #eaeaea;
+    font-size: 15px;
+    transition:all 0.3s;
+ 
+}
+a:hover{
+    color:  rgb(212, 165, 8);
+}
+
+p{
+    padding: 1.6rem 0;
+}
+img{
+    width: auto;
+    height: 5%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3rem rgb(188, 158, 166);
+    border: 0.2rem solid rgb(255, 255, 255);
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*iki dive ait float degerleri karıştığında kullanılır*/
+header {
+    height: 40rem;
+}
+
+header .header-image { 
+    position: absolute;
+    background-image: url(resim1.jpeg); 
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 700%;
+    opacity: 0.5 ;
+    z-index: -1;
+
+}
+header h1{
+    padding: 2rem;
+    padding-bottom: 0;
+}
+.btn{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #666;
+    padding: 1rem 3rem;
+    margin: 0.5rem 0rem;
+    transition:all 0.3s; /*yavaş değişim*/
+    width: 10%;
+
+}
+.btn:hover{
+    background-color: rgb(48, 49, 90);
+    color: #000000;
+    border: 2px solid #000000;
+    font-size: 1.4rem;
+}
+
+#section-a{
+    background-color: #272525;
+    padding: 4rem 1rem;
+    color: rgb(115, 159, 148);
+    transition:all 0.3s; /*yavaş değişim*/
+}
+
+#section-b { 
+    padding: 2.2rem 1.2rem;
+}
+#section-b ul{
+     list-style-type: none;
+}
+
+#section-b li{
+    background-color: #ffffff49;
+    color: #d1e1cd;
+    margin-bottom: 6rem;
+    border: solid rgb(38, 47, 38) 3px;
+}
+
+.col-content {
+    padding: 1.5rem 0rem;
+    transition:all 0.3s;
+}
+i{
+
+    transition:all 0.3s;  
+}
+i:hover{
+    font-size: 2rem;
+   }
+.col-content:hover{
+    box-shadow: 0px 0px 3rem rgb(188, 158, 166);
+    border: 0.2rem solid rgb(212, 165, 8);
+}
+#section-c{
+    background-color: #2622225f;
+    color: #817979;
+    padding: 3rem;
+    font-weight: bolder;
+}
+
+@media screen and (min-width:400px) {
+    #section-b li{
+       width: 46%;
+       margin: 1%; 
+       display: inline-block;   
+}
+#section-b{
+    font-size: x-small;
+    font-weight: bolder;
+}
+
+img{
+    height: 50px;
+    width: auto;
+}
+    .box{
+        width: 50%;
+        float: left;
+    }
+    header {
+        height: 15rem;
+        padding: 1rem;
+        margin: 3rem;
+    }
+    .section-c{
+        font-size: 5px;
+    }
+    
+}
+@media screen and (min-width:800px) {
+    
+    img{
+        height: 100px;
+        width: auto;
+    }
+    #secttion-b{
+        font-size: small;
+        font-weight: bolder;
+    }
+    header {
+        height: 20rem;
+        padding: 2rem;
+        margin: 5rem;
+    }
+    .section-c{
+        font-size: 6px;
+    }
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+   
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        display: inline-block;
+    }
+    img{
+        height: 150px;;
+        width: auto;
+    }
+    .box{
+        width: 50%;
+        float: left;
+    }
+    #section-b{
+        font-size: large;
+        font-weight: bolder;
+    }
+    header {
+        height: 25rem;
+        padding: 4rem;
+        margin: 5rem;
+    }
+    #section-c{
+        font-size: 7px;
+    }
+   
+}
